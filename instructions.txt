@@ -1,4 +1,4 @@
-pre-requisites : Python 3.9
+pre-requisites : Python 3.9 or above.
 I will also share code to extract embeddings from the images so that you can test it with your own set of images. 
 Keep the following in mind while doing so:
 -> This code is applicable for directory which contains sub-directories where each sub-directories contains multiple images.
