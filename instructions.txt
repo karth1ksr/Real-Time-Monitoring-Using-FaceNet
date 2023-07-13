@@ -1,17 +1,20 @@
-pre-requisites : Python 3.9 or above.
-I will also share code to extract embeddings from the images so that you can test it with your own set of images. 
+pre-requisites: Python 3.9 or above.
+
+I will share the code to extract embeddings from the images so that you can test it with your own set of images. 
 Keep the following in mind while doing so:
--> This code is applicable for directory which contains sub-directories where each sub-directories contains multiple images.
+-> This code is applicable for the directory which contains sub-directories where each sub-directories contains multiple images.
 ->You only have to edit the path of the directory to the path of your own directory in line 51. As for saving files you can choose whatever name you want. You can also you this code for testing
 Run faceenc.py to find the embeddings of the images while implementing the above point.
 
+If you want to run the face recognition model with the embeddings of your own trained images with the help of faceenc.py, kindly run the code-named mfsvm.py. While doing so make sure to give the path of the stored npz file which contains the embeddings of your trained faces. The rest is easy, after executing you will be asked to access your webcam. If you are testing this with your webcam then proceed to give yes. If you are testing it with other cameras like cctv, make sure to give the rtsp address for it.
+
 As for cross-validation:
--> you have to edit the path of your npz file (in line 9) which contains the embeddings of the train dataset. 
--> Execute the cross validation.py by applying this changes to get the results.
+-> You have to edit the path of your npz file (in line 9) which contains the embeddings of the training dataset. 
+-> Execute the cross validation.py by applying these changes to get the results.
 
 For Testing the performance of the classifier:
-->Same as the cross validation, you have to edit the path of your npz file (in line 8 ) to load the embeddings of the dataset to train the model.
+->Same as the cross-validation, you have to edit the path of your npz file (in line 8 ) to load the embeddings of the dataset to train the model.
 ->Now, for testing the performance of the model, you have to edit the path of your npz file (in line 12) which contains the embeddings of the test dataset.
--> Execute the testing.py by applying this changes to get the results.
+-> Execute the testing.py by applying these changes to get the results.
 
-Just for testing purpose I will provide you the embeddings of the train and test dataset just to check the model performance. If you want you can create the embeddings of your own for train and test with the help of faceenc.py
+Just for testing purposes, I will provide you the embeddings of the train and test dataset just to check the model performance. If you want you can create the embeddings of your own for train and testing with the help of faceenc.py
