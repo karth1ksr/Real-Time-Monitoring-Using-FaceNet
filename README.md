@@ -1,4 +1,4 @@
-Face Recognition with Facenet
+Face Recognition with Facenet.
 Config files for my GitHub profile.
 Hello, Here I am going to share with you the face recognition model which I have created with the help of MTCCN, FaceNet, and SVM.
 First of all, the basics of the face recognition system are detecting and extracting the face. This is done by Multi-Task CNN, it detects the face based on the features.
