@@ -39,7 +39,7 @@ class FaceRec:
 
     def train_svm(self):
 
-        data = load('trained_faces_enc.npz')
+        data = load('path_of_your_trained_faces_embeddings')
         trainX, trainy = data['arr_0'], data['arr_1']
 
         in_encoder = Normalizer(norm='l2')
