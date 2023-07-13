@@ -30,10 +30,10 @@ class FaceRec:
 
     def connect_database(self):
         self.cnct = pymysql.connect(
-            user='karthiktest',
-            password='Welcome1',
-            host='34.100.229.134',
-            database='person_det'
+            user='enter_username',
+            password='enter_password',
+            host='enter_hostname',
+            database='name_of_the_database_you_want_to_update'
         )
         self.cursor = self.cnct.cursor()
 
