@@ -6,7 +6,7 @@ Keep the following in mind while doing so:
 ->You only have to edit the path of the directory to the path of your own directory in line 51. As for saving files you can choose whatever name you want. You can also you this code for testing
 Run faceenc.py to find the embeddings of the images while implementing the above point.
 
-If you want to run the face recognition model with the embeddings of your own trained images with the help of faceenc.py, kindly run the code-named mfsvm.py. While doing so make sure to give the path of the stored npz file which contains the embeddings of your trained faces. The rest is easy, after executing you will be asked to access your webcam. If you are testing this with your webcam then proceed to give yes. If you are testing it with other cameras like cctv, make sure to give the rtsp address for it.
+If you want to run the face recognition model with the embeddings of your own trained images with the help of faceenc.py, kindly run the code-named mfsvm.py. While doing so make sure to give the path of the stored npz file (change this in line 42) which contains the embeddings of your trained faces, also this code updates the data in your database make sure to provide the necessary details (from line 33 to line 37) to connect to your database and update it. The rest is easy, after executing you will be asked to access your webcam. If you are testing this with your webcam then proceed to give yes. If you are testing it with other cameras like CCTV, make sure to give the rtsp address for it.
 
 As for cross-validation:
 -> You have to edit the path of your npz file (in line 9) which contains the embeddings of the training dataset. 
