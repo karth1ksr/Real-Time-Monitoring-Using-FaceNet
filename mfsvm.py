@@ -57,10 +57,10 @@ class FaceRec:
     def connect_database(self):
         # This part establishes connection to the database
         self.cnct = pymysql.connect(
-            user='karthiktest',
-            password='Welcome1',
-            host='34.100.229.134',
-            database='person_det'
+            user='enter_username',
+            password='enter_password',
+            host='provide_the_hostname',
+            database='enter_db_name'
         )
         self.cursor = self.cnct.cursor()
 
