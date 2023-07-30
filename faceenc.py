@@ -1,3 +1,4 @@
+#import necessary modules
 from PIL import Image
 from os import listdir
 from os.path import isdir
