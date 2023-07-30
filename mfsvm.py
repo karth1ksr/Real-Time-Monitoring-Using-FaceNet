@@ -1,4 +1,4 @@
-# importing necessary packages
+# importing necessary packages.
 from PIL import Image
 import numpy as np
 import os
