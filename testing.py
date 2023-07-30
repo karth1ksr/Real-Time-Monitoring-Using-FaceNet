@@ -1,3 +1,4 @@
+#import necessary modules
 from sklearn.svm import SVC
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import Normalizer, LabelEncoder, StandardScaler, MinMaxScaler
