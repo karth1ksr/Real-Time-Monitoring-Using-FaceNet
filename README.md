@@ -6,3 +6,7 @@ After detecting the face, it extracts and passes it to the FaceNet model to find
 The embeddings produced by the FaceNet are passed to the SVM classifier for classification. ( Note: The SVM classifier is pre-trained with the training dataset ).
 
 The recognized face will be cropped and will be updated in the database. I will also share code for connecting to the database and creating a table.
+
+Note:
+The face encoding code is not written by me and it was taken from the given website, https://machinelearningmastery.com/how-to-develop-a-face-recognition-system-using-facenet-in-keras-and-an-svm-classifier/
+So, I am grateful for the person to share the code.
