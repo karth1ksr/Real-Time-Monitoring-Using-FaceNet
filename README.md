@@ -1,4 +1,4 @@
-##Face Recognition using Multi-CNN
+# Face Recognition using Multi-CNN
 
 Face Recognition with Facenet.
 Config files for my GitHub profile.
