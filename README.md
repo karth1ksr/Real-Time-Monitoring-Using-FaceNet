@@ -92,10 +92,10 @@ python mfsvm_no_db.py     # Without DB
 
 ## Acknowledgements
 
-Face Encoding Code from machinelearnningmastery[https://machinelearningmastery.com/how-to-develop-a-face-recognition-system-using-facenet-in-keras-and-an-svm-classifier/]
-MTCNN Implementation[https://github.com/ipazc/mtcnn]
+Face Encoding Code from [machinelearnningmastery](https://machinelearningmastery.com/how-to-develop-a-face-recognition-system-using-facenet-in-keras-and-an-svm-classifier/)
+[MTCNN Implementation](https://github.com/ipazc/mtcnn)
 
-Pretrained Keras FaceNet Model by nyoki-mtl[https://github.com/nyoki-mtl/keras-facenet]
+Pretrained Keras FaceNet Model by [nyoki-mtl](https://github.com/nyoki-mtl/keras-facenet)
 
 ## LICENSE 
 This project is licensed under te MIT License.
