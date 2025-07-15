@@ -27,7 +27,7 @@ This project implements a real-time **face recognition-based monitoring system**
 ## Project Structure
 
 <pre><code>
-```bash
+
 Face-Recognition-with-Facenet/
 │
 ├── create_db.py # Initializes SQLite database
@@ -37,7 +37,7 @@ Face-Recognition-with-Facenet/
 ├── mfsvm_no_db.py # Same as above but without database logging
 ├── testing.py # Standalone script for testing recognition accuracy
 └── README.md # Project Documentation
-'''
+
 </code></pre>
 ---
 
