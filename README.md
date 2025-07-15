@@ -1,10 +1,10 @@
-# 🧠 Real-Time Face Recognition System using FaceNet
+# Real-Time Face Recognition System using FaceNet
 
-## 📌 Project Objective
+## Project Objective
 
 This project implements a real-time **face recognition-based monitoring system** designed for organizational surveillance — such as in schools, campuses, and offices. It detects and recognizes individuals from a webcam/video feed and logs their presence into a database.
 
-### 🧩 Key Features
+### Key Features
 - Real-time face detection with **MTCNN (P-Net, R-Net, O-Net)**
 - Face embedding with **FaceNet** (128-D vectors)
 - Classification using **Support Vector Machine (SVM)**
@@ -13,7 +13,7 @@ This project implements a real-time **face recognition-based monitoring system**
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python
 - TensorFlow/Keras
@@ -24,7 +24,7 @@ This project implements a real-time **face recognition-based monitoring system**
 
 ---
 
-## 🗃️ Project Structure
+## Project Structure
 
 Face-Recognition-with-Facenet/
 │
@@ -39,7 +39,7 @@ Face-Recognition-with-Facenet/
 
 ---
 
-## 🎯 How It Works
+## How It Works
 
 1. **Face Detection**  
    Uses **MTCNN** to detect and crop faces in real-time from a webcam feed.
@@ -55,16 +55,16 @@ Face-Recognition-with-Facenet/
 
 ---
 
-## 📷 Sample Use Case
+## Sample Use Case
 
-✅ Campus monitoring system  
-✅ Office attendance system  
-✅ Secure access control using face recognition  
-✅ Scalable for new faces (simply add images and rerun `faceenc.py`)
+ 1. Campus monitoring system  
+ 2. Office attendance system  
+ 3. Secure access control using face recognition  
+ 4. Scalable for new faces (simply add images and rerun `faceenc.py`)
 
 ---
 
-## 📌 Setup Instructions
+## Setup Instructions
 
 ```bash
 # Step 1: Create the database
@@ -98,5 +98,5 @@ Face Encoding Code from [machinelearnningmastery](https://machinelearningmastery
 Pretrained Keras FaceNet Model by [nyoki-mtl](https://github.com/nyoki-mtl/keras-facenet)
 
 ## LICENSE 
-This project is licensed under te MIT License.
+This project is licensed under te MIT LICENSE.
 Feel free to use, modify, and distribute it with attribution.
