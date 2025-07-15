@@ -1,17 +1,102 @@
-# Face Recognition using Multi-CNN
+# 🧠 Real-Time Face Recognition System using FaceNet
 
-Face Recognition with Facenet.
-Config files for my GitHub profile.
-Hello, Here I am going to share with you the face recognition model that I have created with the help of MTCNN, FaceNet, and SVM.
-First of all, the basics of the face recognition system are detecting and extracting the face. This is done by Multi-Task CNN, it detects the face based on the features.
-After detecting the face, it extracts and passes it to the FaceNet model to find the embeddings. These embeddings are in the form of vectors.
-The embeddings produced by FaceNet are passed to the SVM classifier for classification. ( Note: The SVM classifier is pre-trained with the training dataset ).
+## 📌 Project Objective
 
-The recognized face will be cropped and will be updated in the database. I will also share code for connecting to the database and creating a table.
+This project implements a real-time **face recognition-based monitoring system** designed for organizational surveillance — such as in schools, campuses, and offices. It detects and recognizes individuals from a webcam/video feed and logs their presence into a database.
+
+### 🧩 Key Features
+- Real-time face detection with **MTCNN (P-Net, R-Net, O-Net)**
+- Face embedding with **FaceNet** (128-D vectors)
+- Classification using **Support Vector Machine (SVM)**
+- Auto-updates recognition logs into a connected database
+- Modular codebase for both DB-connected and standalone systems
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- TensorFlow/Keras
+- OpenCV
+- MTCNN
+- Scikit-learn
+- PymySQL
+
+---
+
+## 🗃️ Project Structure
+
+Face-Recognition-with-Facenet/
+│
+├── create_db.py # Initializes SQLite database
+├── cross_validation.py # Evaluates SVM classifier performance
+├── faceenc.py # Generates face embeddings from training images
+├── mfsvm.py # Main application with DB integration
+├── mfsvm_no_db.py # Same as above but without database logging
+├── testing.py # Standalone script for testing recognition accuracy
+└── README.md # You're reading it!
 
 
-The provided code is created for the purpose of detecting faces in the CCTV camera and updating the values in the database. If you want to try this code from your webcam and do not want to update any values in the database, make sure to checkout this python file which the executes the face recognition by accessing your webcam and without updating any database values
+---
 
-Note:
-The face encoding code is not written by me and it was taken from the given website, https://machinelearningmastery.com/how-to-develop-a-face-recognition-system-using-facenet-in-keras-and-an-svm-classifier/
-So, I am grateful for the person to share the code.
+## 🎯 How It Works
+
+1. **Face Detection**  
+   Uses **MTCNN** to detect and crop faces in real-time from a webcam feed.
+
+2. **Embedding Generation**  
+   Each detected face is converted into a 128-dimensional vector using **FaceNet**.
+
+3. **Face Classification**  
+   The vector is passed to an **SVM classifier** which predicts the person's identity.
+
+4. **Database Logging**  
+   Upon recognition, the system logs user details into a connected **SQLite database**.
+
+---
+
+## 📷 Sample Use Case
+
+✅ Campus monitoring system  
+✅ Office attendance system  
+✅ Secure access control using face recognition  
+✅ Scalable for new faces (simply add images and rerun `faceenc.py`)
+
+---
+
+## 📌 Setup Instructions
+
+```bash
+# Step 1: Create the database
+python create_db.py
+
+# Step 2: Generate face embeddings from labeled images
+python faceenc.py
+
+# Step 3: Train and test the model
+python cross_validation.py
+python testing.py
+
+# Step 4: Run the real-time system
+python mfsvm.py           # With DB logging
+python mfsvm_no_db.py     # Without DB
+```
+## Future Improvements
+1. Add GUI using Streamlit or Flask
+
+2. Enable face registration through webcam
+
+3. Extend to recognize unknown faces (open-set recognition)
+
+4. Deploy on cloud with public API for face verification
+
+## Acknowledgements
+
+Face Encoding Code from machinelearnningmastery[https://machinelearningmastery.com/how-to-develop-a-face-recognition-system-using-facenet-in-keras-and-an-svm-classifier/]
+MTCNN Implementation[https://github.com/ipazc/mtcnn]
+
+Pretrained Keras FaceNet Model by nyoki-mtl[https://github.com/nyoki-mtl/keras-facenet]
+
+## LICENSE 
+This project is licensed under te MIT License.
+Feel free to use, modify, and distribute it with attribution.
