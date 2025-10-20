@@ -6,7 +6,7 @@ from mtcnn.mtcnn import MTCNN
 from numpy import load, asarray, expand_dims, savez_compressed
 from keras_facenet import FaceNet
 
-
+# Function to extract face from images
 def extract_face(filename, required_size=(160, 160)):
     image = Image.open(filename)
     image = image.convert('RGB')
@@ -71,4 +71,5 @@ for face_pixels in trainX:
 xtrain_enc = asarray(xtrain_enc)
 print(xtrain_enc.shape)
 savez_compressed('test_faces_enc.npz', xtrain_enc, trainy)
+
 
