@@ -10,6 +10,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import Normalizer, LabelEncoder
 from keras_facenet import FaceNet
 
+#Creating class for cleaner code
 class SVMTrainer:
     # This class contains the functions of training svm classifier
     def __init__(self):
@@ -129,3 +130,4 @@ if x == 'yes':
     face_recognition.run()
 else:
     print("The process cannot be executed!!")
+
