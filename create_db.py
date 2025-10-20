@@ -18,7 +18,6 @@ queries = [
     "INSERT INTO pdata(Name, pid, Status, Cameraid, Update_time) values('insert the values')",
     "INSERT INTO pdata(Name, pid, Status, Cameraid, Update_time) values('insert the values')",
     "INSERT INTO pdata(Name, pid, Status, Cameraid, Update_time) values('insert the values')",
-    "INSERT INTO pdata(Name, pid, Status, Cameraid, Update_time) values('insert the values')"
 ]
 for query in queries:
     cursor.execute(query)
@@ -26,3 +25,4 @@ for query in queries:
 
 cursor.close()
 cnct.close()
+
