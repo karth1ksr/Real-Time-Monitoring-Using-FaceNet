@@ -7,6 +7,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import Normalizer, LabelEncoder, MinMaxScaler, StandardScaler
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
+#Loading the data
 data = load('trained_faces_enc.npz')
 encodings, labels = data['arr_0'], data['arr_1']
 
@@ -18,6 +19,7 @@ precisions = []
 recalls = []
 f1_scores = []
 
+#Performing CV
 for train_index, val_index in kf.split(encodings, labels):
 
     X_train, X_val = encodings[train_index], encodings[val_index]
@@ -48,7 +50,8 @@ for train_index, val_index in kf.split(encodings, labels):
     precisions.append(precision)
     recalls.append(recall)
     f1_scores.append(f1)
-
+    
+#Printing results
 avg_accuracy = np.mean(accuracies)
 avg_precision = np.mean(precisions)
 avg_recall = np.mean(recalls)
@@ -58,3 +61,4 @@ print("Average Accuracy:", avg_accuracy*100)
 print("Average Precision:", avg_precision*100)
 print("Average Recall:", avg_recall*100)
 print("Average F1 Score:", avg_f1_score*100)
+
