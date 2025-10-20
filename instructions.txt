@@ -17,4 +17,4 @@ For Testing the performance of the classifier:
 ->Now, for testing the performance of the model, you have to edit the path of your npz file (in line 12) which contains the embeddings of the test dataset.
 -> Execute the testing.py by applying these changes to get the results.
 
-Just for testing purposes, I will provide you the embeddings of the train and test dataset just to check the model performance. If you want you can create the embeddings of your own for train and testing with the help of faceenc.py
+Just for testing purposes, I will provide you the embeddings of the train and test dataset just to check the model performance. If you want you can create the embeddings of your own for train and testing with the help of faceenc.py.
