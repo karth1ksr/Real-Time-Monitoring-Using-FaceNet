@@ -13,7 +13,7 @@ from keras_facenet import FaceNet
 import datetime
 from threading import Thread
 
-
+#Creating class for cleaner code
 class SVMTrainer:
     # This class contains the functions of training svm classifier
     def __init__(self):
@@ -255,3 +255,4 @@ if x == 'no':
         thread.start()
     for trh in threads:
         trh.join()
+
